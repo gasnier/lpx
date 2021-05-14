@@ -7,6 +7,10 @@
   "bugs": {
     "url": "https://github.com/gasnier/lpx/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gasnier/lpx.git"
+  },
   "keywords": [
     "npx",
     "exec",
