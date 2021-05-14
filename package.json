@@ -1,0 +1,20 @@
+{
+  "name": "lpx",
+  "version": "1.0.0",
+  "description": "Local Package eXecute",
+  "author": "Bruno Gasnier (https://www.cervval.com/)",
+  "homepage": "https://github.com/gasnier/lpx",
+  "bugs": {
+    "url": "https://github.com/gasnier/lpx/issues"
+  },
+  "keywords": [
+    "npx",
+    "exec",
+    "bin",
+    "local"
+  ],
+  "license": "CC-BY-4.0",
+  "bin": {
+    "lpx": "bin/lpx.js"
+  }
+}
