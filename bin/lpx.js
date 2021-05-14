@@ -19,7 +19,7 @@ if (!script) {
 const binPath = "node_modules" + path.sep + ".bin";
 
 // find the .bin folder that contains the script to run
-let workingDir = __dirname;
+let workingDir = process.cwd();
 let found = false;
 while (!found) {
     if (fs.existsSync(path.resolve(workingDir, binPath, script))) {
