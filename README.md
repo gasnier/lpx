@@ -3,8 +3,9 @@
 Execute a command found in local node_modules/.bin folder or from a parent folder.
 
 You can use lpx to
-* run a binary found the local node_modules/.bin folder
+* run a binary found in the local node_modules/.bin folder
 * run a binary found in the node_modules/.bin of a workspace root from anywhere in the workspace
+* run a binary found in the node_modules/.bin of any parent folder
 
 lpx does not download any package if the binary is not found locally (ie not like npx)
 
@@ -39,7 +40,10 @@ lpx command1 command1arguments
 lpx command2 command2arguments
 ```
 
-## Motivation
+## Real life usage
+If you have installed typescript in a local package and want to build your typescript project and its referenced projects in watch mode from the command line you can run ``lpx tsc -b -w``
+
+## Motivations
 At [Cervval](https://www.cervval.com), our packages are organised in a workspace that has a package.json that determines the versions of the build tools we use (tsc, webpack...)
 
 I wanted to be able to use the binaries of these packages from the command line from anywhere in the workspace.
