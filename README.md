@@ -53,7 +53,7 @@ When doing this, you can run ``npm run tsc`` to use local tsc bin
 
 If you want to add a parameter you need to run  ``npm run tsc -- -b`` with ``--`` which I find very unpleasant
 
-Also, you have to put the binaries in all pacckages scripts which is not optimal
+Also, you have to put the binaries in all packages scripts which is not optimal
 
 * npx
 
