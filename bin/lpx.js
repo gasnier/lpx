@@ -43,4 +43,10 @@ if (!found) {
 const cmd = path.resolve(workingDir, binPath) + path.sep + args.join(" ");
 
 // execute command
-child_process.execSync(cmd, { stdio: "inherit" });
+try {
+    child_process.execSync(cmd, { stdio: "inherit" });
+} catch (err) {
+    process.stdout.write("");//flush
+    process.stderr.write("");//flush
+    process.exit(err.status);//propagate error code
+}

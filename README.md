@@ -43,6 +43,9 @@ lpx command2 command2arguments
 ## Real life usage
 If you have installed typescript in a local package and want to build your typescript project and its referenced projects in watch mode from the command line you can run ``lpx tsc -b -w``
 
+## Exit code
+The exit code of the executed command is propagated (ie if `command` exits with 99 error code, `lpx command` will exit with 99 as well)
+
 ## Motivations
 At [Cervval](https://www.cervval.com), our packages are organised in a workspace that has a package.json that determines the versions of the build tools we use (tsc, webpack...)
 
